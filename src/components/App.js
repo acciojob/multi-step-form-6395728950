@@ -19,7 +19,7 @@ const [step,setStep] = useState(0);
     
   }
   return (
-    <div>
+    <div id="step1">
         
         {
               step===0 && <Step
