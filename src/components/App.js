@@ -19,10 +19,10 @@ const [step,setStep] = useState(0);
     
   }
   return (
-    <div id="step1">
+    <div>
         
         {
-              step===0 && <Step
+              step===0 && (<div  id="step1"><Step
                 id1={"first_name"}
                 id2={"last_name"}
                 name1={"firstname"}
@@ -30,10 +30,12 @@ const [step,setStep] = useState(0);
                 label1={"First Name:"}
                 label2={"Last Name:"}
                 handlenext={handlenext}
-              />
+                 
+              /></div>)
         }
         {
-            step===1 && <Step
+            step===1 &&(<div id="step2">
+               <Step
             id1={"model"}
             id2={"car_price"}
             name1={"model"}
@@ -43,9 +45,11 @@ const [step,setStep] = useState(0);
             handlenext={handlenext}
             handleprev={handleprev}
             />
+            </div>)
         }
         {
-           step===2 &&  <Step
+           step===2 &&   (<div id="step3">
+            <Step
            
            id1={"card_info"}
            id2={"expiry_date"}
@@ -56,6 +60,7 @@ const [step,setStep] = useState(0);
            handleprev={handleprev}
             handlesubmit={handlesubmit}
            />
+           </div>)
           
         }
     </div>
