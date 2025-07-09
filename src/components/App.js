@@ -21,8 +21,9 @@ const [step,setStep] = useState(0);
   return (
     <div>
         
+        <div id="step1">
         {
-              step===0 && (<div  id="step1"><Step
+              step===0 && (<Step
                 id1={"first_name"}
                 id2={"last_name"}
                 name1={"firstname"}
@@ -31,10 +32,12 @@ const [step,setStep] = useState(0);
                 label2={"Last Name:"}
                 handlenext={handlenext}
                  
-              /></div>)
+              />)
         }
-        {
-            step===1 &&(<div id="step2">
+        </div>
+         <div id="step2"> 
+         {
+            step===1 &&( 
                <Step
             id1={"model"}
             id2={"car_price"}
@@ -45,8 +48,10 @@ const [step,setStep] = useState(0);
             handlenext={handlenext}
             handleprev={handleprev}
             />
-            </div>)
+            )
         }
+         </div>
+        <div id="step3">
         {
            step===2 &&   (<div id="step3">
             <Step
@@ -63,6 +68,7 @@ const [step,setStep] = useState(0);
            </div>)
           
         }
+        </div>
     </div>
 
   )
