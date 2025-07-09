@@ -15,7 +15,7 @@ const Step = (props) => {
     <input id={id2} name={name2}></input>
     <br></br>
     {
-        handleprev && (<button type="button"  onClick={handleprev}>Prev</button>)
+        handleprev && (<button type="button"  onClick={handleprev}>Previous</button>)
     }
     
     {
